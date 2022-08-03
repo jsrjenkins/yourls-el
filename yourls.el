@@ -76,7 +76,7 @@
                (url . ,url))
      :parser 'json-read
      :sync t
-     :success (function*
+     :success (function
                (lambda (&key data &allow-other-keys)
                  (setq ret data))))
     (cdr (assoc 'shorturl ret))))
